@@ -5,9 +5,10 @@ import entity.Student;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentData {
-
+    public static Supplier<Student> studentSupplier = () -> new Student("Samir Kumar", 3, 8.3, "male", Arrays.asList("Badminton", "Coding"));
     public static List<Student> getAllStudent(){
         List<Student> students = new ArrayList<>();
 
